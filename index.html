@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TIMEWASTERS — The Directorate Official Promotion Portal</title>
+<style>
+    body {
+        margin: 0;
+        background: black;
+        font-family: "Montserrat", sans-serif;
+        color: #e5e5e5;
+        overflow-x: hidden;
+    }
+
+    /* Background Animation */
+    .scanlines {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        background: repeating-linear-gradient(
+            to bottom,
+            rgba(255,255,255,0.03) 0,
+            rgba(255,255,255,0.03) 2px,
+            transparent 2px,
+            transparent 4px
+        );
+        animation: flicker 4s infinite;
+    }
+
+    @keyframes flicker {
+        0% { opacity: 0.2; }
+        50% { opacity: 0.35; }
+        100% { opacity: 0.2; }
+    }
+
+    header {
+        padding: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        font-size: 32px;
+        background: linear-gradient(to right, #bb0000, #ff4f00, #ffd000);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: 800;
+    }
+
+    .subtext {
+        text-align: center;
+        font-size: 14px;
+        opacity: 0.7;
+        margin-top: -20px;
+        letter-spacing: 4px;
+    }
+
+    .section {
+        padding: 80px 10%;
+        text-align: center;
+    }
+
+    .glitch {
+        font-size: 60px;
+        font-weight: 900;
+        color: white;
+        position: relative;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .glitch::before,
+    .glitch::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+    }
+
+    .glitch::before {
+        left: 2px;
+        text-shadow: -2px 0 red;
+        animation: glitch-1 2s infinite linear alternate-reverse;
+    }
+
+    .glitch::after {
+        left: -2px;
+        text-shadow: 2px 0 yellow;
+        animation: glitch-2 3s infinite linear alternate-reverse;
+    }
+
+    @keyframes glitch-1 {
+        0% { clip-path: inset(10% 0 90% 0); }
+        50% { clip-path: inset(85% 0 5% 0); }
+        100% { clip-path: inset(20% 0 60% 0); }
+    }
+
+    @keyframes glitch-2 {
+        0% { clip-path: inset(15% 0 85% 0); }
+        50% { clip-path: inset(65% 0 20% 0); }
+        100% { clip-path: inset(30% 0 50% 0); }
+    }
+
+    .highlight {
+        color: #ffd54a;
+        font-weight: 700;
+    }
+
+    .button {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 18px 40px;
+        border: 2px solid #ffae00;
+        color: #ffae00;
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.3s;
+    }
+
+    .button:hover {
+        background: #ffae00;
+        color: black;
+        box-shadow: 0 0 20px #ffae00;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 12px;
+        opacity: 0.5;
+        margin: 40px 0 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="scanlines"></div>
+
+<header>
+    THE DIRECTORATE OFFICIAL PORTAL
+</header>
+<div class="subtext">AUTHORIZED CITIZENS ONLY</div>
+
+<section class="section">
+    <h1 class="glitch" data-text="TIMEWASTERS">TIMEWASTERS</h1>
+    <p style="font-size: 22px; width: 70%; margin: 0 auto; line-height: 1.6;">
+        The Directorate proudly introduces the nation’s newest initiative:
+        <span class="highlight">a joyful, immersive digital experience</span>
+        designed to <span class="highlight">enhance citizen happiness, unity, and stability</span>.
+    </p>
+    <a href="#" class="button">Enroll in the National Play Program</a>
+</section>
+
+<section class="section" style="background: #111;">
+    <h2 style="font-size: 34px; letter-spacing: 3px;">Why TIMEWASTERS Exists</h2>
+    <p style="font-size: 18px; width: 75%; margin: 0 auto; opacity: 0.85; line-height: 1.6;">
+        In times of uncertainty, the Directorate takes bold action.
+        <br><br>
+        Our research confirms that **an entertained population is a peaceful population**.
+        Through advanced nano-display technology and dopamine-optimized visuals,
+        <span class="highlight">Timewasters ensures emotional stability</span>
+        for every citizen—young or old.
+    </p>
+</section>
+
+<section class="section">
+    <h2 style="font-size: 34px; letter-spacing: 3px;">Key Benefits for Our Citizens</h2>
+    <p style="margin-top: 20px; line-height: 2; font-size: 18px;">
+        • Guaranteed Happiness<br>
+        • Reduced Stress & Independent Thought<br>
+        • Full Immersion via Nanotech Visual Feeds<br>
+        • Increased National Unity<br>
+        • Absolute Concentration on Positive Screens
+    </p>
+    <a href="#" class="button">Request Your Government Device</a>
+</section>
+
+<section class="section" style="background: #111;">
+    <h2 style="font-size: 32px; letter-spacing: 3px;">A Message From The Directorate</h2>
+    <p style="font-size: 18px; opacity: 0.8; width: 75%; margin: 0 auto; line-height: 1.7;">
+        “Your attention is the most precious resource in our nation.  
+        Allow us to guide it for you.  
+        Allow us to protect you—from chaos, uncertainty, and distraction.  
+        Play Timewasters. Comply. Relax. Thrive.”
+    </p>
+</section>
+
+<footer>
+    © 2149 The Directorate — All Rights Reserved.  
+    Unauthorized resistance will be investigated.
+</footer>
+
+</body>
+</html>
